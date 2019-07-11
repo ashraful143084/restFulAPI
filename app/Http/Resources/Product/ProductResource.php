@@ -15,7 +15,7 @@ class ProductResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'name'=>$this->product_name,
+            'product_name'=>$this->product_name,
             'details'=>$this->details,
             'price'=>$this->price,
             'stock'=>$this->stock == 0 ? 'Out of Stock': $this->stock,
